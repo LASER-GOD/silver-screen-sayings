@@ -1,0 +1,12 @@
+{
+  "name": "Silver Screen Sayings",
+  "short_name": "Silver Screen",
+  "start_url": "./index.html",
+  "display": "fullscreen",
+  "background_color": "#180a0c",
+  "theme_color": "#180a0c",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
