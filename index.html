@@ -370,6 +370,7 @@
       <div class="about-stats">
         <p id="statSayings"></p>
         <p id="statOpens"></p>
+        <p id="statFileSize"></p>
       </div>
       <div class="about-footer">
         <p>Programmed by <strong>LASER GOD</strong></p>
@@ -389,9 +390,10 @@
 
   <script src="screen-data.js"></script>
   <script>
-    var APP_VERSION = 'v1.3';
-    var BUILD_DATE = 'July 10, 2026 · 9:37 PM';
+    var APP_VERSION = 'v1.4';
+    var BUILD_DATE = 'July 10, 2026 · 9:41 PM';
     var VERSION_HISTORY = [
+      { v: 'v1.4', notes: 'Added a file-size stat to the About page - shows the actual size of the loaded quote data in KB, computed live so it stays accurate as more quotes are added.' },
       { v: 'v1.3', notes: 'Added 99 more real, correctly-attributed movie quotes across all three categories (32 Classics, 34 Action, 33 Comedy), bringing the total to 219.' },
       { v: 'v1.2', notes: 'Maintenance redeploy. No content or feature changes.' },
       { v: 'v1.1', notes: 'Maintenance redeploy. No content or feature changes.' },
@@ -592,6 +594,13 @@
         'Opened ' + openCount + (openCount === 1 ? ' time' : ' times');
       document.getElementById('statSayings').textContent =
         totalSayings + ' quotes and counting';
+
+      // Size of the quote data itself (not the whole page/app bundle),
+      // measured as the actual byte size of the loaded data - grows
+      // automatically as more quotes are added, no manual bookkeeping.
+      var dataBytes = new Blob([JSON.stringify(DATA)]).size;
+      document.getElementById('statFileSize').textContent =
+        (dataBytes / 1024).toFixed(1) + ' KB of quotes loaded';
     })();
 
     versionListEl.innerHTML = VERSION_HISTORY.map(function (entry) {
