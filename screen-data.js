@@ -231,14 +231,59 @@
     { quote: "Yeah, well, you know, that's just, like, your opinion, man.", source: "The Big Lebowski, 1998" }
   ];
 
+  var SCIFI = [
+    { quote: "All those moments will be lost in time, like tears in rain.", source: "Blade Runner, 1982" },
+    { quote: "I've seen things you people wouldn't believe.", source: "Blade Runner, 1982" },
+    { quote: "Wake up, Neo.", source: "The Matrix, 1999" },
+    { quote: "There is no spoon.", source: "The Matrix, 1999" },
+    { quote: "I know kung fu.", source: "The Matrix, 1999" },
+    { quote: "Welcome to the real world.", source: "The Matrix, 1999" },
+    { quote: "Follow the white rabbit.", source: "The Matrix, 1999" },
+    { quote: "Life, uh, finds a way.", source: "Jurassic Park, 1993" },
+    { quote: "Welcome... to Jurassic Park.", source: "Jurassic Park, 1993" },
+    { quote: "Hold on to your butts.", source: "Jurassic Park, 1993" },
+    { quote: "Must go faster.", source: "Jurassic Park, 1993" },
+    { quote: "Clever girl.", source: "Jurassic Park, 1993" },
+    { quote: "We spared no expense.", source: "Jurassic Park, 1993" },
+    { quote: "It's a Unix system! I know this!", source: "Jurassic Park, 1993" },
+    { quote: "Dinosaurs eat man. Woman inherits the Earth.", source: "The Lost World: Jurassic Park, 1997" },
+    { quote: "My God, it's full of stars.", source: "2010: The Year We Make Contact, 1984" },
+    { quote: "Open the pod bay doors, HAL.", source: "2001: A Space Odyssey, 1968" },
+    { quote: "I'm sorry, Dave, I'm afraid I can't do that.", source: "2001: A Space Odyssey, 1968" },
+    { quote: "Daisy, Daisy, give me your answer do.", source: "2001: A Space Odyssey, 1968" },
+    { quote: "This is heavy.", source: "Back to the Future, 1985" },
+    { quote: "1.21 gigawatts!", source: "Back to the Future, 1985" },
+    { quote: "Nobody calls me chicken.", source: "Back to the Future, 1985" },
+    { quote: "Love is the one thing that transcends time and space.", source: "Interstellar, 2014" },
+    { quote: "We used to look up at the sky and wonder at our place in the stars.", source: "Interstellar, 2014" },
+    { quote: "Do not go gentle into that good night.", source: "Interstellar, 2014" },
+    { quote: "Judgment day is inevitable.", source: "Terminator 2: Judgment Day, 1991" },
+    { quote: "The future is not set. There is no fate but what we make for ourselves.", source: "Terminator 2: Judgment Day, 1991" },
+    { quote: "This means something. This is important.", source: "Close Encounters of the Third Kind, 1977" },
+    { quote: "Welcome to Earth.", source: "Independence Day, 1996" },
+    { quote: "Today we celebrate our Independence Day!", source: "Independence Day, 1996" },
+    { quote: "Multipass.", source: "The Fifth Element, 1997" },
+    { quote: "Big bada boom.", source: "The Fifth Element, 1997" },
+    { quote: "Dead or alive, you're coming with me.", source: "RoboCop, 1987" },
+    { quote: "I'd buy that for a dollar!", source: "RoboCop, 1987" },
+    { quote: "Get your ass to Mars.", source: "Total Recall, 1990" },
+    { quote: "See you at the party, Richter!", source: "Total Recall, 1990" },
+    { quote: "Consider that a divorce.", source: "Total Recall, 1990" },
+    { quote: "Everybody runs.", source: "Minority Report, 2002" },
+    { quote: "Fear is the mind-killer.", source: "Dune, 2021" },
+    { quote: "The spice must flow.", source: "Dune, 1984" },
+    { quote: "If it's just us, it seems like an awful waste of space.", source: "Contact, 1997" }
+  ];
+
   var CATEGORIES = [
     { id: "classics", label: "Classics", icon: "🎩" },
     { id: "action", label: "Action", icon: "💥" },
     { id: "comedy", label: "Comedy", icon: "😂" },
+    { id: "scifi", label: "Sci-Fi", icon: "🛸" },
     { id: "random", label: "Random", icon: "🎲" },
     { id: "favorites", label: "Favorites", icon: "❤️" }
   ];
 
-  window.SCREEN_DATA = { classics: CLASSICS, action: ACTION, comedy: COMEDY };
+  window.SCREEN_DATA = { classics: CLASSICS, action: ACTION, comedy: COMEDY, scifi: SCIFI };
   window.SCREEN_CATEGORIES = CATEGORIES;
 })();
